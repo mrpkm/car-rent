@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Abyssinica+SIL&family=Alumni+Sans+Pinstripe:ital@1&family=PT+Sans+Narrow&family=Source+Sans+Pro:wght@200&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "PT Sans Narrow", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  font-weight: 900;
+  font-weight: bold;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+html {
+  font-size: 65.5%;
+  scroll-behavior: smooth;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem 9%;
+  z-index: 10001;
+  display: flex;
+  background-color: #fff;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+.header.active {
+  padding: 0.5rem 8%;
+  font-size: 1.5rem;
+  background-color: red;
+}
+.header.active .logo {
+  font-size: 3rem;
+}
+.header .logo {
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+.header .logo span {
+  color: #ff7800;
+}
+.header .navbar {
+  margin-left: 30%;
+}
+.header .navbar a {
+  font-size: 1.8rem;
+  color: black;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+}
+
+#menu-btn {
+  display: none;
+}
+/* =======================header end======================== */
+
+.navhead {
+  display: flex;
+  background-color: aqua;
+  position: absolute;
+  top: 5.3rem;
+  width: 100%;
+  justify-content: space-between;
+  padding: 2rem 7%;
+  z-index: 10000;
+}
+.navhead h1 {
+  font-size: 4rem;
+}
+.firstnav {
+  margin-left: 14rem;
+}
+
+/* swiper -------------- */
+.fslider {
+  margin-top: 14.3rem;
+}
+.swiper {
+  top: 4%;
+  width: 100%;
+  height: 500px;
+  position: absolute;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 500px;
+}
+
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+  color: rgb(11, 238, 106);
+}
+
+.swiper .swiper-pagination-bullet-active {
+  background-color: rgb(59, 11, 247);
+}
+
+/* ===========our service============== */
+.ourservice {
+  margin: 1rem 3rem;
+}
+.ourhead h1 {
+  margin: 2rem 0;
+  font-size: 6rem;
+  margin-left: 5rem;
+}
+.ourhead h1 span {
+  font-size: 6rem;
+  color: orangered;
+}
+.ourbox {
+  display: grid;
+  grid-template-columns: repeat(4, 4fr);
+  gap: 2rem;
+}
+.box {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 35rem;
+  border-radius: 8px;
+}
+.box img {
+  width: 100%;
+  height: 85%;
+  object-fit: cover;
+  transition: 0.2s linear;
+}
+.box:hover img {
+  transform: scale(1.1);
+}
+.box h2 {
+  text-align: center;
+  margin: 1rem;
+  font-size: 3rem;
+}
+/* ===========why =================== */
+.why {
+  width: 100%;
+  height: 53rem;
+  background-image: url(/img/11.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.whyhead {
+  margin: 2rem 0 3rem 3rem;
+}
+.whyhead h1 {
+  font-size: 5rem;
+  color: rgb(45, 233, 7);
+}
+.whyhead h2 {
+  font-size: 3rem;
+  color: rgb(255, 21, 0);
+}
+.paragraph {
+  width: 80%;
+  padding: 0 20px 20px 0;
+  margin-left: 3rem;
+  color: rgb(238, 235, 24);
+  word-spacing: 1rem;
+  letter-spacing: 0.1rem;
+}
+/* ===============pricing ==================== */
+
+.ourprice {
+  margin: 2rem 3rem;
+}
+
+.big-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: 1rem;
+}
+.boxess {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid red;
+  box-shadow: 0 0.5rem 1rem;
+}
+
+.boxess:hover {
+  transition: 0.2s linear;
+  transform: scale(1.05);
+}
+
+.first {
+  width: 100%;
+  height: 25rem;
+  overflow: hidden;
+}
+.first img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.second {
+  margin: 1rem 0;
+  width: 100%;
+  overflow: hidden;
+}
+.second img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.book-btn {
+  background-color: rgb(154, 146, 146);
+  color: rgb(8, 7, 7);
+  padding: 0.8rem 2.5rem;
+  margin-left: 30%;
+  /* margin: 0 auto; */
+  outline: none;
+  border: 0;
+  border-radius: 10px;
+}
+.book-btn:hover {
+  background-color: red;
+  color: white;
+}
+
+/* ================================ */
+.galary {
+  margin: 2.4rem 4rem;
+}
+.galary-box {
+  margin: 2rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.galary-box img {
+  width: 100%;
+  height: 100%;
+}
+.boxes {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 25rem;
+  cursor: pointer;
+}
+.boxes img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.2s linear;
+}
+.boxes:hover img {
+  transform: scale(1.1);
+}

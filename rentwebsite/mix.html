@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resposive nav</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .header {
+            background-color: black;
+            color: wheat;
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 7%;
+        }
+
+        .header .navbar a {
+            font-size: 2rem;
+            margin: 0 1rem;
+            color: blue;
+        }
+
+        #menubar {
+            display: none;
+        }
+
+        @media(max-width:1000px) {
+            html {
+                font-size: 65.5%;
+            }
+        }
+
+        @media(max-width: 880px) {
+            #menubar {
+                display: block;
+            }
+
+            .header .navbar {
+                position: absolute;
+                top: -20%;
+                left: -10%;
+                /* width: 15rem; */
+                background-color: black;
+            }
+
+            .header .navbar.active {
+                /* position: absolute; */
+                right: 0;
+                left: 0;
+                top: 5%;
+                /* top: 2rem; */
+            }
+
+            .header .navbar a {
+                display: block;
+                font-size: 3rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>our logo</h1>
+        </div>
+        <nav class="navbar">
+            <a href="">home</a>
+            <a href="">about</a>
+            <a href="">service</a>
+            <a href="">contect</a>
+        </nav>
+        <h2 id="menubar">menu</h2>
+    </header>
+    <script>
+        let navbar = document.querySelector('.navbar');
+
+        document.querySelector('#menubar').onclick = () => {
+            navbar.classList.toggle('active');
+        };
+    </script>
+</body>
+
+</html>

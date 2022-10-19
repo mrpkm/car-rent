@@ -1,0 +1,66 @@
+@media (max-width: 1200px) {
+  html {
+    font-size: 60%;
+  }
+}
+@media (max-width: 1000px) {
+  html {
+    font-size: 57.5%;
+  }
+  .navhead {
+    display: block;
+    z-index: 10000;
+    text-align: center;
+  }
+  .firstnav {
+    margin-left: 0;
+  }
+}
+@media (max-width: 880px) {
+  #menu-btn {
+    display: inline-block;
+  }
+  .header .navbar {
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    width: 30rem;
+    box-shadow: var(--box-shadow);
+    background: #e9e5e5;
+  }
+  .header .navbar.active {
+    right: 2rem;
+    transition: 0.4s linear;
+  }
+  .header .navbar a {
+    font-size: 2rem;
+    margin: 2rem 2.5rem;
+    display: block;
+  }
+  .ourbox {
+    display: block;
+  }
+  .big-box {
+    display: block;
+  }
+  .book-btn {
+    margin-left: 40%;
+    margin-bottom: 1rem;
+  }
+  .galary-box {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 650px) {
+  html {
+    font-size: 52.5%;
+  }
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 48.5%;
+  }
+}
